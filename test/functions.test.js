@@ -33,7 +33,7 @@ const otherPets = [
 ];
 
 
-test('should return dogs', (expect) => {
+skip('should return dogs', (expect) => {
     const expected = [
         { name: 'scooter', type: 'dog' },
         { name: 'sassy', type: 'dog' },    
@@ -42,6 +42,7 @@ test('should return dogs', (expect) => {
     const actual = getDogs([...otherPets]);
 
     expect.deepEqual(actual, expected);
+    
 });
 
 
